@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import Flat from "./flat";
 
-class List extends Component {
-  render() {
-    return (
-      <div>
-      </div>
-    );
-  }
+const List = (props) => {
+  return (
+    <div className="flat-list">
+      {props.flats.map((flat, index) => {
+        return (
+          <Flat
+            flat={flat}
+            key={index}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 export default List;
