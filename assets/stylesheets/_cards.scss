@@ -7,7 +7,7 @@
   position: relative;
 
   &.active {
-    border: 10px solid red;
+    border: 5px solid red;
   }
 }
 
@@ -31,16 +31,16 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-}
 
-.card-description h2 {
-  font-size: 20px;
-}
+  h2 {
+    font-size: 20px;
+  }
 
-.card-description p {
-  font-size: 14px;
-  opacity: 0.7;
-  font-weight: lighter;
+  p {
+    font-size: 14px;
+    opacity: 0.7;
+    font-weight: lighter;
+  }
 }
 
 .card-link {
@@ -52,8 +52,8 @@
   z-index: 2;
   background: black;
   opacity: 0;
-}
 
-.card-link:hover {
-  opacity: 0.1;
+  &:hover {
+    opacity: 0.1;
+  }
 }
