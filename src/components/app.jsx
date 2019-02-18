@@ -10,9 +10,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // flats: flats,
-      flats,
-      selectedFlat: flats[0]
+      flats: flats,
+      selectedFlat: flats[0],
       // selectedFlat: null
     }
   }
@@ -31,7 +30,7 @@ class App extends Component {
           selectedFlat={this.state.selectedFlat}
           selectFlat={this.selectFlat}
         />
-        <Map />
+        <Map selectedFlat={this.state.selectedFlat} />
       </div>
     )
   }
